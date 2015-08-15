@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="24px" viewBox="0 0 28 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>browse</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,4.941 L28,4.941 L28,0 L0,0 L0,4.941 L0,4.941 Z M0,14.471 L28,14.471 L28,9.529 L0,9.529 L0,14.471 L0,14.471 Z M0,24 L28,24 L28,19.059 L0,19.059 L0,24 L0,24 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSArtboardGroup" transform="translate(-11.000000, -13.000000)">
+            <g id="Menu" sketch:type="MSLayerGroup" transform="translate(11.000000, 13.000000)">
+                <g id="browse">
+                    <mask id="mask-2" sketch:name="Clip 25" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-25"></g>
+                    <path d="M-5,-7 L33,-7 L33,31 L-5,31 L-5,-7 Z" id="Fill-24" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

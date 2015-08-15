@@ -1,0 +1,688 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" name="site_title" content="">
+        <!--<meta property="og:url" name="site_url" content="ext.homedepot.com/how-to-guides/posts/howto-three-season-garden.html">-->
+        <meta property="og:site_name" name="site_name" content="The Home Depot provides ideas for using tile creatively throughout your home. From flooring to backsplashes, browse a variety of tilescapes and be inspired.">
+        <meta property="og:image" content="">
+
+        <link rel="stylesheet" href="css/pages/header.css">
+        <link rel="stylesheet" href="css/pages/footer.css">
+        <title>Header and Footer Prototype</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/styleguide.css">
+        <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <script src="js/ZeroClipboard.js"></script>
+    </head>
+    <body>
+        <div id="container" class="container_30 clearfix">
+            <div class="grid isBound inset">
+                <div class="header" id="top-header">
+                    <!-- Secondary Header -->
+                    <div class="header-secondary">
+                         <!--Logo 
+                        <div class="logo col-1-12-lg col-1-12-md col-1-4"></div>-->
+                        <!-- Top Links -->
+                        <div class="toplinks col-11-12-lg col-10-12-md col-3-4">
+                            <div class="toplink"><a href="">DIY Projects &amp; Ideas</a></div>
+                            <div class="toplink"><a href="">Credit Services</a></div>
+                            <div class="toplink"><a href="">PRO Business</a></div>
+                            <div class="toplink"><a href="">Order Status</a></div>
+                            <div class="toplink"><a href="">Specials &amp; Offers</a></div>
+                        </div>
+                        <!-- Local Store Message -->
+                        <div id="storemessage" class="col-4-4">
+                            <div class="storemessage">Your Store: <span style="font-weight:bold;color:#000;">&nbsp;Jonesboro</span></div>
+                            <div class="storemessage">Open Until: <span style="font-weight:bold;color:#000">&nbsp;10:00pm</span></div>
+                            <div id="changestore" style="color:#FC6300;font-size:14px;margin-top:3px">change</div>
+                        </div>
+                    </div>
+                    <!-- end header-secondary -->
+                    <div class="clearout"></div>
+                    <div class="fixed-header-bkgd"></div>
+                    <!-- Primary Header -->
+                    <div id="header-primary" class="header-primary">
+
+                        <!-- Logo -->
+                        <div class="logo col-1-12-lg col-1-12-md col-1-4"></div>
+
+                        <!-- BROWSE Button -->                        
+                        <div class="nav-btn blackbutton col-2-12-lg col-2-12-md col-1-4" id="nav-btn-browse">
+                            <div class="nav-btn-wrapper">
+                                <div class="nav-btn-icon nav-browse-icon-reverse" id="nav-browse-icon"></div>
+                                <div class="nav-btn-text">
+                                    <div id="largebrowselabel" class="nav-btn-title blackbuttontext" style="margin-top:2px;line-height:15px">Products</div>
+                                    <div id="smallbrowselabel" class="blackbuttontext" style="margin-top:-1px">and Services</div>
+                                    <!--<div class="nav-btn-label blackbuttontext">and Services</div>-->
+                                </div>
+                            </div>
+                            <div id="placeholder-browse" class="clearout"></div>
+                            <!-- Dropdown -->
+                            <div class="nav-dropdown grid isBound" id="dropdown-browse" style="display:none">
+                                <ul class="browse-nav" id="browse-mainnav">
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link fire">Special Savings &amp; Offers</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link carat">Local Ad</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div id="browse-main-appliances" class="browse-main-link carat">Appliances</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link carat">Bath &amp; Faucets</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link carat">Blinds &amp; Decor</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link carat">Building Materials</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link carat">Doors &amp; Windows</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link carat">Electrical</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link carat">Flooring &amp; Area Rugs</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link carat">Heating &amp; Cooling</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link carat">Kitchen</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link carat">Lawn &amp; Garden</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link carat">Lighting &amp; Ceiling Fans</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link carat">Outdoor Living</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link carat">Paint</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link carat">Plumbing</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link carat">Storage &amp; Organization</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link carat">Tools &amp; Hardware</div>
+                                    </li>
+                                    <hr />
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link drill">Installation Services</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link phone">Repair Services</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link truck">Tool &amp; Truck Rental</div>
+                                    </li>
+                                </ul>
+                                <!--              FLYOUTS  -->             
+                                <!-- COLUMN 2 -->
+                                <div class="browse-flyout">
+                                    <ul class="browse-nav" id="browse-subnav1">
+                                        <li class="subnav-listitem">
+                                            <ul class="subcat-nav">
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-subcat-link carat">REFRIGERATORS</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">French Door Refrigerators</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Side By Side Refrigerators</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Top Freezer Refrigerators</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Bottom Freezer Refrigerators</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Mini Refrigerators</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Freezers &amp; Ice Makers</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Beverage, Keg &amp; Wine Coolers</div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="subnav-listitem">
+                                            <ul class="subcat-nav">
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-subcat-link carat">HEATING, COOLING &amp; AIR QUALITY</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Air Conditioners</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Portable Fans</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Air Purifiers</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Dehumidifiers</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Heaters</div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="subnav-listitem">
+                                            <ul class="subcat-nav">
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-subcat-link carat">WASHERS &amp; DRYERS</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Top Load Washers</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Front Load Washers</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Dryers</div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="subnav-listitem">
+                                            <ul class="subcat-nav ">
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-subcat-link carat">VACUUM CLEANERS &amp; FLOOR CARE</div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <!-- COLUMN 3 -->
+                                    <ul class="browse-nav" id="browse-subnav2">
+                                        <li class="subnav-listitem">
+                                            <ul class="subcat-nav">
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-subcat-link carat">SMALL APPLIANCES</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Coffee, Tea &amp; Espresso Makers</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Popcorn &amp; Entertaining Electrics</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Toasters, Toaster Ovens &amp; Countertop Ovens</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Mixers</div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="subnav-listitem">
+                                            <ul class="subcat-nav">
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-subcat-link carat">DISH WASHERS</div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="subnav-listitem">
+                                            <ul class="subcat-nav">
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-subcat-link carat">COOKING APPLIANCES</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Coffee, Tea &amp; Espresso Makers</div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="subnav-listitem">
+                                            <ul class="subcat-nav">
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-subcat-link carat">COOKING APPLIANCES</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Electric Ranges</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Gas Ranges</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Microwaves</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Cooktops</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Wall Ovens</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Range Hoods</div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="subnav-listitem">
+                                            <ul class="subcat-nav">
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-subcat-link carat">RELATED CATEGORIES</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Appliance Special Buys</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Garbage Disposals</div>
+                                                </li>
+                                                <li class="browse-sub-item">
+                                                    <div class="browse-main-link">Water Heaters</div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end nav-btn-browse -->
+                        <!-- Search  Box -->
+                        <div class="nav-btn col-4-12-lg col-4-12-md col-1-4" id="search-wrapper">
+                            <div class="nav-btn-icon" id="nav-search-icon"></div>
+                            <div id="search-inner-left">
+                                <div class="clear-wrapper">
+                                    <div class="clear-btn" id="search-icon-clear"></div>
+                                </div>
+                                <form id="search-form" name="searchBoxForm" method="get">
+                                    <fieldset id="search-field">
+                                        <div id="nav-searchbox" class="search-control-group">
+                                            <label id="search-label" class="control-label" for="searchFocus">What can we help you find?</label>
+                                            <input id="search-input" type="text" maxlength="60" tabindex="18" name="keyword" autocomplete="off">
+                                        </div>
+                                    </fieldset>
+                                    <div class="nav-btn-icon" id="nav-search-icon-on"></div>
+                                </form>
+                            </div>
+                            <!-- end search-inner-left -->
+                            <div id="search-box"></div>
+                            <div id="placeholder-search" class="clearout"></div>
+                            <!-- Dropdown -->
+                            <div class="nav-dropdown grid isBound" style="display:none" id="dropdown-search">
+                                <div id="search-inner-wrapper">
+                                    <div class="clear-wrapper">
+                                        <div class="clear-btn" id="search-icon-clear"></div>
+                                    </div>
+                                    <form id="drop-search-form" name="searchBoxForm" method="get">
+                                        <fieldset id="search-field">
+                                            <div id="nav-searchbox" class="search-control-group">
+                                                <label id="search-label" class="control-label" for="searchFocus">What can we help you find?</label>
+                                                <input id="search-drop-input" type="text" maxlength="60" tabindex="18" name="keyword" autocomplete="off">
+                                            </div>
+                                        </fieldset>
+                                        <div class="nav-btn-icon move" id="nav-search-icon-on"></div>
+                                    </form>
+                                </div>
+                                <!-- end search-inner-left -->
+                                <ul class="browse-nav col-1-1" id="dropdown-search-content">
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-head">SUGGESTED TERMS </br><span style="font-size:12px;color:red;font-weight:bold">For mobile, this should be their existing dropdown</span></div>
+                                    </li>
+                                    <hr />
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link2">refrigerator french door</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link2">refrigerator small</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link2">refrigerator water filter</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link2">refrigerator side by side</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link2">refrigerator filter</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link2">refrigerator water line</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link2">refrigerator only</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link2">refrigerator mini</div>
+                                    </li>
+                                    <li class="browse-main-item">
+                                        <div class="browse-main-link2">refrigerant</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end search-wrapper -->
+                        <!-- Store Finder Button -->
+                        <div class="nav-btn col-2-12-lg col-2-12-md col-1-4" id="nav-btn-finder">
+                            <div class="nav-btn-icon" id="nav-finder-icon"></div>
+                            <div class="nav-btn-text">
+                                <div class="nav-btn-label" style="color:#000">Your Store</div>
+                                <div class="nav-btn-title">Jonesboro #123</div>
+                            </div>
+                            <div id="placeholder-finder" class="clearout"></div>
+                            <!-- Dropdown -->
+                            <div class="nav-dropdown grid isBound" style="display:none" id="dropdown-finder">
+                                <div class="store-col col-1-1 col-1-2-md col-1-2-lg">
+                                    <div class="store-header">My Store</div>
+                                    <div class="store-map"></div>
+                                    <div class="store-selected-store">
+                                        <div class="selected-store-address">Washington Courthouse, GA</div>
+                                        <div class="selected-store-hours">Open Until: &nbsp; 9:00pm</div>
+                                        <div class="selected-store-phone">(770)555-5555</div>
+                                    </div>
+                                </div>
+                                <div class="store-col col-1-1 col-1-2-md col-1-2-lg">
+                                    <div class="store-header">Nearby Stores</div>
+                                    <ul>
+                                        <li class="store-container">
+                                            <div class="store-distance">49 mi.</div>
+                                            <div class="store-location">
+                                                <div class="store-name">Cumberland</div>
+                                                <div class="store-address">2600 Cumberland Parkway</div>
+                                            </div>
+                                            <div class="store-check"></div>
+                                        </li>
+                                        <li class="store-container">
+                                            <div class="store-distance">49 mi.</div>
+                                            <div class="store-location">
+                                                <div class="store-name">Midtown</div>
+                                                <div class="store-address">2600 Cumberland Parkway</div>
+                                            </div>
+                                            <div class="store-check"></div>
+                                        </li>
+                                        <li class="store-container">
+                                            <div class="store-distance">49 mi.</div>
+                                            <div class="store-location">
+                                                <div class="store-name">Riverdale, GA</div>
+                                                <div class="store-address">2600 Cumberland Parkway</div>
+                                            </div>
+                                            <div class="store-check"></div>
+                                        </li>
+                                    </ul>
+                                    <button id="store-find-btn" type="button" class="primary-ghost">FIND MORE STORES</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end nav-btn-finder -->
+                        <!-- My Account Button -->
+                        <div class="nav-btn col-2-12-lg col-2-12-md col-1-4" id="nav-btn-account">
+                            <div class="nav-btn-icon" id="nav-account-icon"></div>
+                            <div class="nav-btn-text">
+                                <div class="nav-btn-label" style="color:#000">Hello</div>
+                                <div class="nav-btn-title">Michael Smith</div>
+                            </div>
+                            <div id="placeholder-account" class="clearout"></div>
+                            <!-- Dropdown -->
+                            <div class="nav-dropdown grid isBound" style="display:none" id="dropdown-account">
+                                <form  class="" name="login" action="index_submit" method="get" accept-charset="utf-8">
+                                    <ul class="">
+                                        <li class="browse-main-item col-1-1">
+                                            <div id="signin-label" class="browse-main-head lock">Sign In</div>
+                                        </li>
+                                        <li class="browse-main-item col-1-1">
+                                            <input id="input-email" type="email" name="usermail" placeholder="Email" required>
+                                        </li>
+                                        <li class="browse-main-item col-1-1">
+                                            <input id="input-password" type="password" name="password" placeholder="Password" required>
+                                            <button id="login-btn" type="button" class="primary">LOG IN</button>
+                                        </li>
+                                        </li>
+                                        <li class="browse-main-item col-1-1">
+                                            <div class="browse-main-link lock">Orders &amp; Purchases</div>
+                                        </li>
+                                        <li class="browse-main-item col-1-1">
+                                            <div class="browse-main-link lock">Account Profile</div>
+                                        </li>
+                                        <li class="browse-main-item col-1-1">
+                                            <div class="browse-main-link lock">My Lists</div>
+                                        </li>
+                                        <li class="browse-main-item col-1-1">
+                                            <div class="browse-main-link lock">Orders &amp; Purchases</div>
+                                        </li>
+                                        <li class="browse-main-item col-1-1">
+                                            <div class="browse-main-link lock">Make a Credit Card Payment</div>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end nav-btn-account -->
+                        <!-- Shopping Cart Button -->
+                        <div class="nav-btn col-1-12-lg col-1-12-md col-1-4" id="nav-btn-cart">
+                            <div class="nav-btn-icon" id="nav-cart-icon"></div>
+                            <div id="placeholder-cart" class="clearout"></div>
+                            <!-- Dropdown -->
+                            <div class="nav-dropdown grid isBound" style="display:none" id="dropdown-cart">
+                                <div class="cart-header col-1-1-lg">
+                                    <div class="cart-head col-2-12-lg col-2-12-md col-1-6" id="cart-head-img">&nbsp;</div>
+                                    <div class="cart-head col-7-12-lg col-7-12-md col-3-6" id="cart-head-item">ITEM</div>
+                                    <div class="cart-head col-1-12-lg col-1-12-md col-1-6" id="cart-head-qty">QTY</div>
+                                    <div class="cart-head col-2-12-lg col-2-12-md col-1-6" id="cart-head-price">PRICE</div>
+                                </div>
+                                <div class="clearout"></div>
+                                <ul class="cart-items col-1-1">
+                                    <li class="cart-item">
+                                        <div class="cart-item-img col-2-12-lg col-2-12-md col-1-6"><img src="images/washingmachine.jpg"/></div>
+                                        <div class="cart-item-details">
+                                            <div class="cart-item-descript col-7-12-lg col-7-12-md col-3-6">
+                                                <div class="cart-item-name">Samsung  7.5 cu. ft. Gas Dryer in White </div>
+                                                <div class="cart-item-model">Model #  DV42H5000GW</div>
+                                            </div>
+                                            <div class="cart-item-price">
+                                                <input type="text" class="item-qty col-1-12-lg col-1-12-md col-1-6" pattern="[0-9]*" maxlength="2" value="1" id="qty">
+                                                <div class="cart-item-total col-2-12-lg col-2-12-md col-1-6">$809.10</div>
+                                                <div id="remove-btn" class="text-btn col-1-12-lg col-1-12-md col-1-6">REMOVE</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-item">
+                                        <div class="cart-item-img col-2-12-lg col-2-12-md col-1-6"><img src="images/washingmachine.jpg"/></div>
+                                        <div class="cart-item-details">
+                                            <div class="cart-item-descript col-7-12-lg col-7-12-md col-3-6">
+                                                <div class="cart-item-name">Samsung  7.5 cu. ft. Gas Dryer in White </div>
+                                                <div class="cart-item-model">Model #  DV42H5000GW</div>
+                                            </div>
+                                            <div class="cart-item-price">
+                                                <input type="text" class="item-qty col-1-12-lg col-1-12-md col-1-6" pattern="[0-9]*" maxlength="2" value="1" id="qty">
+                                                <div class="cart-item-total col-2-12-lg col-2-12-md col-1-6">$809.10</div>
+                                                <div id="remove-btn" class="text-btn col-1-12-lg col-1-12-md col-1-6">REMOVE</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="cart-item">
+                                        <div class="cart-item-img col-2-12-lg col-2-12-md col-1-6"><img src="images/washingmachine.jpg"/></div>
+                                        <div class="cart-item-details">
+                                            <div class="cart-item-descript col-7-12-lg col-7-12-md col-3-6">
+                                                <div class="cart-item-name">Samsung  7.5 cu. ft. Gas Dryer in White </div>
+                                                <div class="cart-item-model">Model #  DV42H5000GW</div>
+                                            </div>
+                                            <div class="cart-item-price">
+                                                <input type="text" class="item-qty col-1-12-lg col-1-12-md col-1-6" pattern="[0-9]*" maxlength="2" value="1" id="qty">
+                                                <div class="cart-item-total col-2-12-lg col-2-12-md col-1-6">$809.10</div>
+                                                <div id="remove-btn" class="text-btn col-1-12-lg col-1-12-md col-1-6">REMOVE</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clearout"></div>
+                                <div class="cart-total col-1-1">Total <span class="total-price">$809.10</span></div>
+                                <button id="checkout-btn" type="button" class="primary col-1-1">CHECKOUT</button>
+                            </div>
+                        </div>
+                        <!-- end nav-btn-cart -->
+                    </div>
+                    <!-- end header-primary -->
+                    <div class="overlay" id="megamenu-overlay"></div>
+                </div>
+                <!-- end header -->
+                <div class="hero"></div>
+            </div>
+            <!-- end grid -->                      
+            <div class="clearout"></div>
+            <div class="grid isBound">
+                <div id="section-featurepg"  class="col-1-1 styleguide-section">
+                    <div>
+                        <div class="col-1-1 alpha omega">
+                            <h3>Feature Page</h3>
+                        </div>
+                        <!-- row 1 -->
+                        <div class="row">
+                            <div class="col-1-1">
+                                <img src="http://dummyimage.com/1280x488/999/fff" class="item-image stretchy">
+                            </div>
+                        </div>
+                        <!-- row 2 -->
+                        <div class="row">
+                            <div class="col-1-2-md col-1-1">
+                                <img src="http://dummyimage.com/635x320/ddd/fff" class="item-image stretchy">
+                            </div>
+                            <div class="col-1-2-md col-1-1">
+                                <img src="http://dummyimage.com/635x320/ddd/fff" class="item-image stretchy">
+                            </div>
+                        </div>
+                        <!-- row 3 -->
+                        <div class="row">
+                            <div class="col-1-3-md col-1-1">
+                                <img src="http://dummyimage.com/421x462/777/fff" class="item-image stretchy">
+                            </div>
+                            <div class="col-1-3-md col-1-1">
+                                <img src="http://dummyimage.com/421x462/777/fff" class="item-image stretchy">
+                            </div>
+                            <div class="col-1-3-md col-1-1">
+                                <img src="http://dummyimage.com/421x462/777/fff" class="item-image stretchy">
+                            </div>
+                        </div>
+                        <!-- row 4 -->
+                        <div class="row">
+                            <div class="col-1-2-md col-1-1">
+                                <img src="http://dummyimage.com/635x190/ccc/fff" class="item-image stretchy">
+                            </div>
+                            <div class="col-1-2-md col-1-1">
+                                <img src="http://dummyimage.com/635x190/ccc/fff" class="item-image stretchy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="footer-container" class="footer grid isBound">
+                <!-- Primary Footer -->
+                <div class="footer-primary">
+                    <div id="col1" class="col-1-1">
+                        <div class="copyright-text col-1-6-lg col-7-12-md col-1-1">
+
+                            <span style="font-size:12px;color:red;font-weight:bold">For mobile, this should their existing footer</span>
+                            <div id="copyright" class="legal">© 2000-2015 Homer TLC, Inc. All Rights Reserved. Use of this site is subject to certain Terms of Use.</div>
+                            <div id="disclaimer" class="legal">Local store prices may vary from those displayed. Products shown are normally stocked but inventory levels cannot be guaranteed.</div>
+                            <!-- Norton Logo -->
+                            <div class="nortonlogo"><img src="images/norton.png" /></div>
+                        </div>
+                        <!-- end list col -->
+                        <div class="footer-lists">
+                            <div class="list-col col-1-6-lg col-5-12-md col-1-1">
+                                <div class="link-list-header">Resources &amp; Services</div>
+                                <ul class="link-list">
+                                    <li> <a target="_blank" href="" class="listlink">DIY Project &amp; Ideas</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Truck &amp; Tool Rental</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Moving Services</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Installation Services &amp; Repairs</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Measurement Services</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Protection Plans</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Rebate Center</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Gift Cards</a></li>
+                                </ul>
+                            </div>
+                            <!-- end list col -->
+                            <div class="list-col col-1-6-lg col-5-12-md col-1-1">
+                                <div class="link-list-header">Customer Service</div>
+                                <ul class="link-list">
+                                    <li> <a target="_blank" href="" class="listlink">Check Order Status</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Pay Your Credit Card</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Return Policy</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Shipping &amp; Delivery</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Product Recalls</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">See all Help &amp; FAQs</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Contact Us</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Provide Feedback</a></li>
+                                </ul>
+                            </div>
+                            <!-- end list col -->
+                            <div class="list-col col-1-6-lg col-5-12-md col-1-1">
+                                <div class="link-list-header">About Home Depot</div>
+                                <ul class="link-list">
+                                    <li> <a target="_blank" href="" class="listlink">Careers</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Corporate Information</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Digital Newsroom</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Home Depot Foundation</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Investor Relations</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Government Customers</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Suppliers &amp; Providers</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Affiliate Program</a></li>
+                                </ul>
+                            </div>
+                            <!-- end list col -->
+                            <div class="list-col col-1-6-lg col-5-12-md col-1-1">
+                                <div class="link-list-header">Our Other Sites</div>
+                                <ul class="link-list">
+                                    <li> <a target="_blank" href="http://www.homedepot.ca/" class="listlink">The Home Depot Canada</a></li>
+                                    <li> <a target="_blank" href="http://www.homedepot.com.mx/" class="listlink">The Home Depot Mexico</a></li>
+                                    <li> <a target="_blank" href="http://www.homedecorators.com/" class="listlink">Home Decorators Collection</a></li>
+                                    <li> <a target="_blank" href="http://www.blinds.com/" class="listlink">Blinds.com</a></li>
+                                    <li> <a target="_blank" href="http://www.redbeacon.com/" class="listlink">RedBeacon</a></li>
+                                </ul>
+                            </div>
+                            <!-- end list col -->
+                            <div class="list-col col-1-6-lg col-5-12-md col-1-1">
+                                <div class="link-list-header">Privacy &amp; Rights</div>
+                                <ul class="link-list">
+                                    <li> <a target="_blank" href="" class="listlink">Privacy &amp; Security Statement</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Cookie Usage</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Manage Privacy Preferences</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">California Rights</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">California Regulations</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Site Map</a></li>
+                                    <li> <a target="_blank" href="" class="listlink">Store Directory</a></li>
+                                </ul>
+                            </div>
+                            <!-- end list col -->
+                        </div>
+                        <!-- end list col -->
+                        <div class="clearout"></div>
+                    </div>
+                    <!-- end col2 -->
+                </div>
+                <!-- end footer-primary -->
+                <div class="clearout"></div>
+                <div class="footer-tertiary">
+                    <div class="tagline col-3-12-lg col-3-12-md col-1-1"><img src="images/moresavings.png" /></div>
+                    <!-- Need Help -->
+                    <div class="helpnumber col-9-12-lg col-9-12-md col-1-1">
+                        <span id="need-text">Need Help?</span>
+                        <span id="please-text">Please call us at: </span><br class="phone-break1" />
+                        <a href="#" class="phone-spelled">1-800-HOME-DEPOT</a>
+                        <span id="phone-num">(1-800-466-3337)</span>
+                    </div>
+                </div>
+                <!-- end footer-tertiary -->
+            </footer>
+
+        </div>
+
+        <script src="js/velocity.min.js"></script>
+        <script src="js/velocity.ui.js"></script>    
+        <script src="js/main.js"></script>
+    </body>
+</html>

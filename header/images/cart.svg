@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="30px" viewBox="0 0 32 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>Cart</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M21,12 L4,12 L4,38 L34,38 L34,24 L21,24 L21,12 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSArtboardGroup" transform="translate(-11.000000, -248.000000)">
+            <g id="Cart" sketch:type="MSLayerGroup" transform="translate(5.000000, 241.000000)">
+                <rect id="Rectangle-299" fill="#000000" sketch:type="MSShapeGroup" x="23" y="7" width="15" height="15"></rect>
+                <mask id="mask-2" sketch:name="Mask" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                <path d="M28.94175,28.7410899 L32,18.5650584 L11.32545,18.5650584 L10.47005,12.75 L6,12.75 L6,15.8941065 L7.9994,15.8941065 L10.40635,33.9451504 C10.4408,35.1645816 11.5835,36.15 12.9914,36.15 C14.39995,36.15 15.54005,35.1645816 15.5407,33.9451504 L23.84185,33.9451504 C23.84445,35.1645816 24.9839,36.15 26.39245,36.15 C27.79905,36.15 28.94175,35.1645816 28.94175,33.9451504 L30.0422,33.9451504 L30.0422,31.3940901 L13.28065,31.3530577 L12.8185,28.7410899 L28.94175,28.7410899 Z" id="Cart-2-Copy" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <text id="0" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="26" y="19">0</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

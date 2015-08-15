@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>search</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M16.80417,0 C13.97438,0 11.32809,1.1 9.35438,3.098 C7.38128,5.096 6.3137,7.756 6.34885,10.588 C6.37268,12.614 6.96545,14.575 8.06817,16.3 L0,24.368 L3.52502,27.893 L11.62238,19.798 C13.29881,20.825 15.21353,21.378 17.29209,21.402 C20.12187,21.402 22.76877,20.302 24.74128,18.305 C26.71617,16.308 27.78315,13.646 27.7486,10.813 C27.6777,4.923 22.82834,0.074 16.80417,0 L16.80417,0 Z M16.86315,3.762 L16.86315,3.763 C20.70213,3.809 23.93881,6.966 23.98289,10.8 C24.00672,12.629 23.31804,14.349 22.04553,15.639 C20.77302,16.926 19.06562,17.636 17.1497,17.636 L17.14791,17.636 C13.3137,17.592 10.15745,14.434 10.11098,10.599 C10.08715,8.769 10.77762,7.05 12.05132,5.761 C13.32502,4.471 15.03421,3.762 16.86315,3.762 L16.86315,3.762 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSArtboardGroup" transform="translate(-12.000000, -164.000000)">
+            <g id="Search" sketch:type="MSLayerGroup" transform="translate(12.000000, 164.000000)">
+                <g id="search">
+                    <mask id="mask-2" sketch:name="Clip 34" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-34"></g>
+                    <path d="M-5,-5 L32.74941,-5 L32.74941,32.893 L-5,32.893 L-5,-5 Z" id="Fill-33" fill="#000000" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
