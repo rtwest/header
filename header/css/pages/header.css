@@ -1010,6 +1010,7 @@ button {
   text-align: right !important;
   display: none; 
   height:50px;
+  margin-top: -15px !important;
 }
 
 .toplink {
@@ -1134,15 +1135,15 @@ button {
 #storemessage{display:none;}
 #storemessage {font-size:16px;color:#777;margin:12px 10px 12px 8px}
 .storemessage{float:left; margin-right:20px;}
+.searchicon{background: url("../../images/icons.png") no-repeat;background-position: -168px -158px;height: 40px;width:40px;position: absolute;top:11px;right:14px}
 
 @media (min-width: 960px) {
     .blackbutton {background-color:#323232;}
     .blackbutton:hover {background-color:#323232;}
     .blackbuttontext {color:#fff;}
     .blackbuttontext:hover {color:#fff !important;}
-    .nav-browse-icon-reverse {background-position: -102px -5px !important;}
-    #smallbrowselabel{}
-    #largebrowselabel{}
+    .nav-browse-icon-reverse {background-position: -163px -5px !important;opacity: 1 ! important;}
+
 }
 @media (max-width: 959px){
     #nav-browse-icon {background-position: -170px -5px;opacity:1}
@@ -1175,6 +1176,7 @@ button {
     .browse-main-link:hover {background-color: #fff;}
     .browse-main-link,.browse-main-link2  {color: #3e7697; height:40px;}
     .header {background-position: 0 120px; }
+    /*#persistentmobilesearch{display:block !important;position: absolute; top:57px;background-color: #fff;padding:5px;}; Need to go away on scroll */
 }
 @media (max-width: 465px)  {
    .col-1-4{width:20% !important}

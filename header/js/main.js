@@ -91,10 +91,11 @@ jQuery(document).ready(function($) {
     // FIX HEADER
     $(function() {
         $(window).scroll(function() {
-            if ($(this).scrollTop() > 70 && $(this).scrollTop() < 2400) {
+            if ($(this).scrollTop() > 55 && $(this).scrollTop() < 2400) {
                 $('.fixed-header-bkgd').slideDown(300);
                 $('.header-primary').addClass('fixed');
                 checkOverlayPosition();
+                closeMegaMenu();
 
             }
             else{
