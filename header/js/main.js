@@ -377,14 +377,14 @@ function updateContainer() {
            $('.nav-dropdown').css({ 'min-width': headwidth +2});
            $('.nav-dropdown').css({ 'max-height': screenHt });
            $('.nav-dropdown').css({ 'position': 'absolute' });
-           $('.helpnumber').insertAfter('.nortonlogo');
-           $('.footer-lists').insertBefore('.copyright-text');
+          // $('.helpnumber').insertAfter('.nortonlogo');
+          // $('.footer-lists').insertBefore('.copyright-text');
            moveDropdowns();
        }
        else{
         $('.nav-dropdown').css({ 'min-width': 0 });
-        $('.helpnumber').insertAfter('.tagline');
-        $('.footer-lists').insertAfter('.copyright-text');
+       // $('.helpnumber').insertAfter('.tagline');
+       // $('.footer-lists').insertAfter('.copyright-text');
            movebackDropdowns();
         }
 

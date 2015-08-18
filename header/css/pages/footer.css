@@ -1,3 +1,12 @@
+html, body {
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
 /*--------Main Content Styles---------
 */
 .footer-container {
@@ -6,7 +15,7 @@
   width: 100%;
   height: auto;
   padding: 0 !important;
-  background-color: #F4F4F4;
+  background-color: #fff;
   z-index: 0;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -19,8 +28,9 @@
   margin: 2px 0 0;
   padding: 20px 0 !important;
   width: 100%;
-  background-color: #F4F4F4;
+  background-color: #fff;
   border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   z-index: 1;
   display: block; }
 
@@ -37,13 +47,12 @@
 
 .footer-tertiary {
   position: relative;
-  color: #fff;
   padding: 15px 20px;
   width: 100%;
   min-height: 50px;
   z-index: 1;
   margin: 0;
-  background-color: #333; }
+  background-color: #fff; }
 
 .footer-tertiary-bkgd {
   position: relative;
@@ -86,46 +95,43 @@
   padding: 5px; }
 
 #credit-ad {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 2px;
+  background-color: #eee;
   margin: 28px 0 0 0;
-  padding: 5px 0 10px 0;
-  text-align: center;
-  float: left; }
+  padding: 10px 0 10px 0;
+  text-align: left; }
 
 #credit-card {
-  display: inline-block;
-  margin: 10px 5px;
-  width: 30%;
-  text-align: right; }
+  padding: 10px 15px;
+  float: left; }
+
+#credit-text {
+  float: left;
+  padding-left: 20px 10px; }
 
 #credit-card img {
-  max-width: 117px; }
+  max-width: 51px; }
 
 #credit-ad-headline {
-  display: inline-block;
-  width: 60%;
   color: #777;
   font-weight: bold;
   text-transform: uppercase;
   padding-top: 5px;
   text-align: left; }
 
+#credit-percent {
+  font-size: 24px; }
+
 #credit-ad-headline img {
   max-width: 255px; }
 
 .credit-links {
-  margin: 5px auto;
-  text-align: center; }
-
-.credit-links li + li {
-  border-left: 1px solid #ccc; }
+  margin: 5px 0;
+  text-align: left; }
 
 .credit-listlink {
   font-size: 12px;
   display: inline-block;
-  padding: 0px 5px;
+  padding: 0;
   text-align: center; }
 
 .credit-listlink:not(first-child)
@@ -134,7 +140,7 @@
 
 #subscription {
   display: block;
-  padding-right: 0;
+  padding: 10px 10px;
   float: right; }
 
 form#emailsub {
@@ -161,8 +167,9 @@ form#emailsub {
   background-color: #f96302;
   color: #fff;
   width: 50px;
-  height: 42px;
+  height: 40px;
   font-size: 14px;
+  font-weight: bold;
   cursor: pointer;
   border: none;
   border-radius: 0;
@@ -173,6 +180,10 @@ form#emailsub {
   overflow: hidden;
   padding-right: 0; }
 
+.subscribe-label {
+  font-size: 14px;
+  padding: 20px 5px; }
+
 .footer-header {
   font-size: 14px;
   font-weight: bold;
@@ -180,8 +191,45 @@ form#emailsub {
   color: #777;
   text-transform: uppercase; }
 
-.legal {
-  padding: 10px 8px 0 0px; }
+.footer-lists {
+  display: none; }
+
+.accord-container {
+  display: block; }
+
+@media (min-width: 640px) {
+  .accord-container {
+    display: none; }
+
+  .footer-lists {
+    display: block; } }
+.accord-toggle:hover {
+  background-color: #EEE;
+  text-decoration: none;
+  cursor: pointer; }
+
+.accordion-header {
+  background: url("../../images/minus.png") no-repeat;
+  box-sizing: border-box;
+  background-position: 96% 25px;
+  color: #f96302;
+  display: block;
+  width: 100%;
+  min-width: 320px;
+  margin: 0;
+  margin-bottom: 0 !important;
+  padding: 20px 10px 20px 20px !important;
+  text-align: left;
+  border-top: 1px solid #EEE;
+  letter-spacing: 1px; }
+
+.accordion-header:hover {
+  color: #333; }
+
+.accordion-header.closed {
+  background: url("../../images/plus.png") no-repeat;
+  background-position: 96% 25px;
+  color: #666; }
 
 .top-row {
   float: left;
@@ -204,8 +252,7 @@ form#emailsub {
   font-size: 14px;
   font-weight: bold;
   padding: 0;
-  color: #777;
-  text-transform: uppercase;
+  color: #333;
   padding-bottom: 5px;
   width: 70%; }
 
@@ -222,7 +269,6 @@ form#emailsub {
   float: right; }
 
 .listlink {
-  color: #333;
   padding: 0 0 15px 0;
   line-height: 28px; }
 
@@ -232,42 +278,55 @@ form#emailsub {
 .link-list {
   display: none; }
 
+#copyright {
+  margin-top: 20px; }
+
 .copyright-text {
-  min-height: 200px;
-  padding: 10px 40px !important; }
+  padding: 10px 0px !important; }
 
 .footer-lists {
   padding: 10px 20px 10px 30px !important; }
 
 .nortonlogo {
-  padding: 20px 0 0px;
+  padding: 0;
   margin: 0 auto;
-  text-align: center; }
-
-.nortonlogo img {
-  max-width: 60px; }
-
-.nortonlogo {
+  text-align: right;
+  float: right;
   text-align: center;
-  width: 100%;
   height: auto; }
 
+.nortonlogo img {
+  max-width: 100px; }
+
+.help-line {
+  padding: 10px 0; }
+
 .helpnumber {
-  font-size: 16px;
-  line-height: 24px;
-  padding: 20px 0 !important;
+  font-size: 14px;
+  line-height: 21px;
+  margin-right: 10px;
   text-align: left !important;
   float: left;
   color: #333; }
 
 .phone-spelled {
-  color: #333; }
+  color: #3e7697; }
 
 .phone-spelled:hover {
   color: #f96302; }
 
 .phone-break1 {
-  display: block; }
+  display: none; }
+
+.inline-links {
+  margin: 0;
+  padding: 0;
+  line-height: 28px;
+  font-size: 14px; }
+
+.inline-listlink {
+  display: inline-block;
+  padding: 0 10px 0 0; }
 
 .social-icons {
   text-align: center;
@@ -343,16 +402,22 @@ form#emailsub {
   background-position: -328px -48px;
   cursor: pointer; }
 
-@media (min-width: 640px) {
-  .helpnumber {
-    text-align: right !important;
-    margin-left: 20px;
-    padding: 0 0 !important;
-    float: right;
-    color: #fff; }
+.mobile-trim {
+  display: none; }
 
-  .phone-spelled {
-    color: #fff; }
+.mobile-br {
+  display: block; }
+
+@media (min-width: 640px) {
+  .mobile-trim {
+    display: inline-block; }
+
+  .mobile-br {
+    display: none; }
+
+  .helpnumber {
+    margin-left: 0px;
+    padding: 0 0 !important; }
 
   .footer-header {
     padding-top: 0px; }
@@ -371,15 +436,18 @@ form#emailsub {
 
   .footer-lists {
     padding: 0 0 0 0 !important; } }
-@media (min-width: 717px) {
+@media (min-width: 640px) {
   #col2 {
     display: block; }
 
   .accord-button {
-    display: none; } }
+    display: none; }
+
+  .link-list {
+    display: block; } }
 @media (min-width: 915px) {
   #credit-ad {
-    padding: 10px 10px 10px 5px; }
+    padding: 20px 10px 20px 5px; }
 
   .credit-listlink {
     font-size: 14px; }
@@ -389,7 +457,7 @@ form#emailsub {
 @media (min-width: 1024px) {
   #credit-ad {
     margin: 0px 0 0 5px;
-    padding: 5px 0 10px;
+    padding: 20px 20px 20px;
     width: 100%; }
 
   #subscription {
@@ -405,18 +473,14 @@ form#emailsub {
     display: none; }
 
   .helpnumber {
-    padding: 0px;
-    font-size: 18px; }
+    padding: 0px; }
 
   .credit-listlink {
     font-size: 12px;
-    padding: 0px 5px; }
+    padding: 0; }
 
   .footer-header {
     padding-top: 20px; }
-
-  .link-list {
-    display: block; }
 
   .copyright-text {
     padding-right: 7px !important; } }
@@ -435,6 +499,28 @@ form#emailsub {
 
   .credit-listlink {
     font-size: 14px;
-    padding: 0px 10px; } }
+    padding: 0; } }
 
 /*# sourceMappingURL=footer.css.map */
+
+
+/* =================================== */
+/* =================================== */
+/* =================================== */
+
+.smallerfooterbar{
+  color: #fff;
+  background-color: #333;
+  height: 40px;
+  padding-top:12px;
+  font-weight: bold;
+}
+.smallerfooterlinks{
+  margin: 10px 0px 10px 0px;
+  font-size: 12px;
+}
+
+@media (max-width: 641px){
+  #smallfooter{display:block !important}
+  .footer-primary{display:none}
+}
